@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hlavnistranka</title>
+  <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    .mySlides {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navigation">
+
+      <!-- Logo -->
+      <div class="logo">
+        <h1>SPSMB</h1>
+      </div>
+
+      <!-- Navigation -->
+      <ul class="menu-list" id="menu-list2">
+        <li><a href="#aktuality">Aktuality</a></li>
+        <li><a href="#oskole">O škole</a></li>
+        <li><a href="#oskole">Pro uchazeče</a></li>
+        <li><a href="#pro-zaky">Pro žáky a rodiče</a></li>
+        <li><a href="#kontakty">Kontakty</a></li>
+
+      </ul>
+
+      <a href="javascript:void(0)" class="icon humbarger" onclick="myFunction()">
+        <div class="bar"></div>
+        <div class="bar2 bar"></div>
+        <div class="bar"></div>
+      </a>
+    </nav>
+  </header>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("menu-list2");
+      if (x.className === "menu-list") {
+        x.className += " humbarger";
+      } else {
+        x.className = "menu-list";
+      }
+    }
+  </script>
+
+  <div class="pozadi">
+    <h1 class="nadpis">Střední průmyslová škola</h1>
+    <h2 class="nadpis2">Mladá Boleslav</h2>
+  </div>
+  <div class="container">
+
+
+    <div class="oskole" id="oskole">
+      <h1>O škole</h1>
+      <p>V současné době škola připravuje mladé odborníky jak pro povolání na pozicích středních technických kádrů, tak
+        pro vysokoškolské studium. Velký důraz při výuce je kladen na práci s výpočetní technikou, která zasahuje
+        nejenom do řady odborných předmětů, ale je i hlavní náplní výuky nového studijního oboru Informační technologie.
+        Významným prvkem zařazeným do odborné přípravy je výuka programu CATIA, používaného ve většině regionálních
+        firem přímo či nepřímo spolupracujících s firmou Škoda Auto a.a.s., nebo přímo ve vývoji této firmy. Znalost
+        programu CATIA velmi výrazně zvyšuje možnosti uplatnění absolventů školy na trhu práce. Studenti se s tímto
+        programem setkají ve všech studijních oborech, ale největší znalosti programu CATIA si odnášejí studenti oboru
+        IT systémy ve strojírenství.
+        <br><br>
+        Příprava studentů je tradičně spjata s výrobou automobilů ve firmě Auto Škoda a.s. Mladá Boleslav. Škola na
+        základě smlouvy vysílá studenty do tohoto podniku na praxe, využívá i řady pomůcek a zařízení firmy při výuce
+        odborných předmětů, laboratoří apod. Velká část absolventů nalezla v této firmě celoživotní uplatnění. Dále
+        škola úzce spolupracuje s firmami AUFEER Design, ŠKO-ENERGO, BILSING AUTOMATION, VYRTYCH, AUTO KELLY, BOSCH,
+        METRONET, AUTOZÍTKA, FAURECIA, T-MOBILE a dalšími.
+        <br><br>
+        Ke zvýšení atraktivnosti studia přispívají jistě i rozšířená výuka jazyků v oboru Strojírenská technická
+        administrativa, možnost získání řidičského průkazu skupiny B, C v rámci výuky přímo ve studijním oboru
+        Management a provoz dopravy a dále samozřejmě podpora zájmové činnosti studentů.
+        <br><br>
+        V současné době ve škole studuje ve 4 studijních oborech okolo 400 studentů a studentek.
+      </p>
+    </div>
+
+
+    <h1 id="pro-zaky">Maturitní obory</h1>
+
+    <div class="w3-content w3-display-container">
+
+      <div class="w3-display-container mySlides">
+        <img src="IT.jpg" style="width:100%">
+        <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+          Informační technologie
+        </div>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <img src="strojirenstvi2.jpg" style="width:100%">
+        <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+          Strojírenství
+        </div>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <img src="dopravni2.jpg" style="width:100%">
+        <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+          Dopravní prostředky
+        </div>
+      </div>
+
+
+
+      <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
+    </script>
+
+    <h1 id="aktuality">Aktuality</h1>
+
+    <div class="row ">
+
+
+
+
+
+      <div class="col-12 col-sm-6 col-lg-6 ">
+        <div class="card">
+          <img src="prijimacky.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Druhé kolo přijímacího řízení</b></h4>
+            <p>Příjem přihlášek na druhé kolo přijímacího řízení je ukončen. Od pondělí 22.5.2023 nebudeme přijímat
+              další přihlášky ke studiu kromě těch, které byly odeslány poštou nejpozději v pátek 19. 5.2023.
+              Vyhodnocení došlých přihlášek proběhne co nejdříve, všichni zákonní zástupci budou včas informováni.</p>
+           
+          </div>
+        </div>
+
+      </div>
+      <div class="col-12 col-sm-6 col-lg-6 ">
+        <div class="card">
+          <img src="otaznik.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Přijímací řízení – časté dotazy</b></h4>
+            <p><b>Budete vyhlašovat druhé kolo přijímacího řízení?</b><br>
+
+              Po uplynutí zákonné lhůty pro podání zápisových lístků vyřídíme podaná odvolání proti nepřijetí. Teprve
+              potom můžeme v případě potřeby vyhlásit druhé kolo přijímacího řízení. Nebude to dříve, než 15. května
+              2023.</p>
+           
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-6 ">
+        <div class="card">
+          <img src="prijimacky2.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Výsledky 1. kola PŘ pro školní rok 2023/2024</b></h4>
+            <p>» <b>Studijní obor Informační technologie</b><br> Počet přijatých 32 (shoda počtu bodů na 30.- 32.
+              místě)?<br>
+              » <b>Studijní obor Strojírenství </b><br> Počet přijatých 62 (shoda počtu bodů na 60.- 62. místě)<br>
+              » <b>Studijní obor Dopravní prostředky</b> <br>Počet přijatých 32 (shoda počtu bodů na 30.- 32. místě)</p>
+            
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-6 ">
+        <div class="card">
+          <img src="reditelske.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Ředitelské volno</b></h4>
+            <p>V souladu s § 24, odst. 2, zákona č. 561/2004 Sb. o předškolním, základním, středním, vyšším odborném a
+              jiném vzdělávání (školský zákon) vyhlašuji z organizačních důvodů na 13. dubna 2023 a 14. dubna 2023 volno
+              ředitele školy pro první až třetí ročníky denního studia. Toto volno se netýká studentů 4. ročníku denního
+              studia.</p>
+           
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+  </div>
+  <div class="mapa">
+    <h1 id="kontakty">Kde nás najdete</h1>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2137.8382290207765!2d14.900979731099365!3d50.41627762615806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470955b8547e8079%3A0xb553032a1eaf8b6d!2zU3TFmWVkbsOtIHByxa9teXNsb3bDoSDFoWtvbGEgTWxhZMOhIEJvbGVzbGF2!5e0!3m2!1scs!2scz!4v1685189300219!5m2!1scs!2scz"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <footer>
+
+
+    <div class="row" style="padding-top: 50px;">
+      <div class="  col-sm-12 col-md-3 rounded-3" style="margin-left: auto;
+      margin-right: auto;">
+        <h4>Kontakty školy</h4>
+        <p style="font-size: large;">Střední průmyslová škola,
+          Mladá Boleslav, Havlíčkova 456<br><br>
+          Tel.: +420 326 201 101<br>
+          Email:sekretariat@‍spsmb.cz<br>
+          ID datové schránky: pzhesix
+
+
+        </p>
+      </div>
+      <div class="  col-sm-12 col-md-3 rounded-3" style="margin-left: auto;
+      margin-right: auto;">
+        <h4>Možná hledáte</h4>
+        <p style="font-size: large;">
+
+          <a href="#">Studijní obory</a><br>
+          <a href="#">Aktuality</a><br>
+          <a href="#">Fotogalerie</a><br>
+          <a href="#">úvodní stránka</a><br>
+          <a href="#">Přijímací řízení</a>
+
+
+        </p>
+      </div>
+      <div class="col-sm-8 col-lg-8 col-xl-3 rounded-3 " style="margin: auto;">
+        <h4>Nebojte se nás zeptat</h4>
+
+        <form action="" method="post" data-ajaxize="form">
+
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="form-group">
+                <label for="name">Jméno a Příj. <span class="text-danger">*</span></label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="" required="required"
+                  maxlength="150">
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-group">
+                <label for="email">E-mail <span class="text-danger">*</span></label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="" required="required"
+                  maxlength="150">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <div class="form-group">
+                <label for="message">Text zprávy <span class="text-danger">*</span></label>
+                <textarea id="message" name="message" class="form-control" placeholder="" required="required"
+                  rows="8"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="row row-consent">
+            <div class="col-12">
+              <div class="form-group">
+                <label>
+                  <input type="checkbox" id="consent" name="consent" value="1" required="required"> Souhlasím se
+                  zpracováním <a href="/ochrana-osobnich-udaju-a-podminky-uziti" target="_blank">osobních údajů a
+                    podmínkami užití</a> <span class="text-danger">*</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row row-recaptcha">
+            <div class="col-12">
+              <input id="gr647217cc98896" type="hidden" name="g-recaptcha-response"
+                value="03AL8dmw9ycy_QBWWmsjIwXFhqRntMJeyovBg5QxXqPqU1PcwEPDrOUult0lCri7LY5jNiT0RdqvPn1rt7zlbwT4UFiGm0lABoi4ME8W6ocSQYF193pZoBt5iDGjna7IUU07EeAYWlM2_XaPDzQglYxVS6NoSVoch87tPFGOYN_PLf7dgov1pSzaCuyCFzG8HN_5I92JauRZ4L6mucab02cs0QJhRBa_V76JCSEjl-0EVBW1TmyjKVQ37_EA_0MovGRq1wBbSRnccyptDgri96EygcX5j2WS59Vld-IRXZool15cTOkHprJhWWkMXQH2o9YJEcx0Vq10TcST3DwdFpgrywCiI8ErQCL3H6tMA5by6TsaZd5Aq1I12AzFxxBt2aB1bRU4rWvTVBUoOYlGl1w_-NxXftt0OfDZ9q4ZHzt48KoIxZR_qexNUNzVchuc5o943exEeJADxYjG0Jcsl5UOHBk4y3Q4VUa6jvzB5Fd5lFeEQcjJNdoyDK5-YKJg1rBIZyBPLSVRLO1w7v2xHrG4npxqkUvKRs0A">
+              <script>var gr647217cc98896Onload = function () { grecaptcha.ready(function () { grecaptcha.execute("6Lcv1dcUAAAAABi4IHQguGBRgI7c4D_JWwkRa8nE", { action: "contact" }).then(function (token) { document.getElementById("gr647217cc98896").value = token; }); }); }; var gr647217cc98896Focus = setTimeout(function () { var rl = $("#gr647217cc98896"); rl.closest("form").find("input").on("focus", function () { if (!rl.data("loaded")) { var gr = document.createElement("script"); gr.src = "https://www.google.com/recaptcha/api.js?render=6Lcv1dcUAAAAABi4IHQguGBRgI7c4D_JWwkRa8nE&onload=gr647217cc98896Onload"; gr.type = "text/javascript"; gr.async = "true"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(gr, s); rl.data("loaded", "1"); } }); }, 400); var gr647217cc98896Error = setTimeout(function () { var rl = $("#gr647217cc98896"); if (!rl.data("loaded") && rl.parent().find(".text-danger").length) { var gr = document.createElement("script"); gr.src = "https://www.google.com/recaptcha/api.js?render=6Lcv1dcUAAAAABi4IHQguGBRgI7c4D_JWwkRa8nE&onload=gr647217cc98896Onload"; gr.type = "text/javascript"; gr.async = "true"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(gr, s); rl.data("loaded", "1"); } }, 400); if (typeof jQuery == "undefined") { document.addEventListener("DOMContentLoaded", function () { gr647217cc98896Focus; gr647217cc98896Error; }); } else { gr647217cc98896Focus; gr647217cc98896Error; }</script>
+            </div>
+          </div>
+
+          <div class="row row-submit">
+            <div class="col-12">
+              <input type="hidden" id="formsId" name="formsId" value="contact">
+              <div class="d-none"><label for="csrf647217cc98996">CSRF token</label><input id="csrf647217cc98996"
+                  type="text" name="csrf" value="" class="form-control"><input type="hidden" name="tfield"
+                  value="MTY4NTE5ODc5Ng=="><input type="hidden" name="Z051YTNjNUZUNThyR1krbXpZNWhJZz09"
+                  value="UDU4K09LbnpnZTQwYlkvYmRCS1JRUT09"></div> <input type="hidden" name="redraw"
+                value="form.contact">
+              <input type="hidden" name="forced" value="">
+              <button class="btn btn-primary" type="submit">
+                Odeslat </button>
+            </div>
+
+          </div>
+
+        </form>
+
+
+      </div>
+      <p style="margin-top: 50px;">© 2023 SPŠ MB | Všechna práva vyhrazena.
+        <br><br> Zdroje:SPSMB<br>
+        Vytvořil <a href="matejsilhan.html">Matěj Šilhán</a>
+      </p>
+
+    </div>
+  </footer>
+</body>
+
+</html>
